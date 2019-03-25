@@ -9,7 +9,19 @@ Vue.use(VueRouter)
 //④实例化router，将routes放在router里
 const router= new VueRouter({
   routes,
-  mode:'history'
+  mode:'history',
+  //滚动行为
+  // scrollBehavior (to, from, savedPosition){
+  //   // return{x:0,y:100}
+  //   // return{selector:'.btn'}
+  //   if(savedPosition){
+  //     return savedPosition
+  //   }else{
+  //     return{x:0,y:0}
+  //   }
+
+
+  // }
 })
 //全局守卫
 // router.beforeEach((to, from, next) => {

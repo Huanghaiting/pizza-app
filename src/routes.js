@@ -22,8 +22,8 @@ default:Home,
 'historyLink':History,
 'orderingGuideLink':OrderingGuide
   }},
-  {path:'/menu',component:Menu},
-  {path:'/menu',component:Menu},
+  {path:'/menu',name:'menuLink',component:Menu},
+  {path:'/login',component:Login},
   {path:'/admin',component:Admin},
   {path:'/about',redirect: '/history',component:About,children:[
     {path:'/contact',name:'contactLink',component:Contact,children:[
